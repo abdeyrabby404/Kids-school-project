@@ -26,6 +26,11 @@
     font-weight: 600px;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
+}
+.p-btn:hover{
+    background-color: black;
+    transition: background-color 2s;
 }
 .p-btn-2{
     background-color: black;
@@ -34,7 +39,11 @@
     font-size: 1.25rem;
     font-weight: 600px;
     border: none;
-    border-radius: 12px;
+    border-radius: 12px;cursor: pointer;
+}
+.p-btn-2:hover{
+    background-color: orange;
+    transition: background-color 2s;
 }
 .flex{
     display: flex;
@@ -102,12 +111,14 @@
 
 /* Responsive style  */
 @media screen and (max-width: 576px) {
+    .nav-container{
+        border: 1px solid orange;
+    }
     /* Nav mobile style  */
     .nav{
         margin-left: 16px;
         margin-right: 16px;
-        border-bottom: 1px solid orange;
-        padding-bottom: 12px;
+        /* padding-bottom: 12px; */
     }
     .nav > .nav-logo > h1{
         display: none;
