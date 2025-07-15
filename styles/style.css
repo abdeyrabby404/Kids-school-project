@@ -211,6 +211,55 @@
     border: none;
 }
 
+/* footer section style */
+.footer{
+    background-color: #01ACFD;
+    height: 520px;
+}
+.footer-containerss{
+    
+}
+.footer-container{
+    /* border: 1px solid tomato; */
+    width: 1080px;
+    /* height: 222px; */
+}
+.logo-title{
+    width: 400px;
+}
+.footer-title{
+    color: white;
+}
+.footer-subtitle{
+    font-size: 1.25rem;
+    color: white;
+    margin-left: 15px;
+    margin-top: 36px;
+}
+.logo-title-container{
+    width: 300px;
+}
+.footer-logo > img{
+    width: 83px;
+    height: 82px;
+}
+.about-school > h3{
+    margin-bottom: 32px;
+    color: white;
+}
+.about-school > p{
+    margin-bottom: 20px;
+    color: white;
+}
+.footer-title{
+    /* font-size: 1.325rem; */
+}
+.keep-in-touch > h3{
+    color: white;
+    margin-bottom: 32px;
+}
+
+
 
 
 
@@ -289,9 +338,32 @@
 .gap-10{
     display: none;
 }
+
+/* footer section style */
+.footer{
+    height: 100%;
 }
-
-
+.footer-container{
+    flex-direction: column;
+}
+.logo-title{
+    margin-top: 60px;
+}
+.footer-subtitle{
+    font-size: 1rem;
+}
+.about-school{
+    margin-left: 15px;
+}
+.about-school > h3{
+    margin-top: 32px;
+}
+.keep-in-touch{
+    width: 357px;
+    margin-left: 15px;
+    margin-bottom: 60px;
+}
+}
 /*Extra Responsive style  */
 @media screen and (min-width: 577px) {
     .menu-mobile {
