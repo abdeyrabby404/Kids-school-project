@@ -313,11 +313,11 @@
 .pupel{
     background-color: #5D58F0;
 }
-.stories-bgs{
+/* .stories-bgs{
     background: linear-gradient(to top,
             #FEA301 0%,
             rgba(255, 255, 255, 0) 70%);
-}
+} */
 .abcd-bg {
     background-image: url(../assets/bg.png);
 }
