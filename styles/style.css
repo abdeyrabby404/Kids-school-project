@@ -54,9 +54,11 @@
 .flex {
     display: flex;
 }
-.grid{
+
+.grid {
     display: grid;
 }
+
 .justify-center {
     justify-content: center;
 }
@@ -68,16 +70,23 @@
 .justify-between {
     justify-content: space-between;
 }
-.center{
+
+.center {
     text-align: center;
 }
+
 .gap-32 {
     gap: 32px;
 }
-.gap-10{
+
+.gap-10 {
     gap: 10px;
     margin-bottom: 60px;
 }
+.gap-20{
+    gap: 20px;
+}
+
 .orange {
     color: #FEA301;
 }
@@ -133,75 +142,77 @@
 }
 
 /* curriculum section style  */
-.curriculum{
+.curriculum {
     background-image: url(../assets/bg.png);
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
-.curriculum-container{
+
+.curriculum-container {
     max-width: 1160px;
     margin: 0 auto;
 }
-.std-head{
+
+.std-head {
     font-size: 3rem;
     margin-top: 60px;
 }
-.card-container{
 
-     margin: 80px 0;
-     grid-template-columns: repeat(3,1fr);
-     
+.card-container {
+
+    margin: 80px 0;
+    grid-template-columns: repeat(3, 1fr);
+
 }
-.card{
+
+.card {
     width: 368px;
     padding-top: 52px;
     padding-bottom: 53px;
     border-radius: 19px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.card-1{
-    background: linear-gradient(to bottom, 
-              rgba(222, 245, 255, 1) 0%, 
-              rgba(255, 255, 255, 0) 40%);
+
+.card-1 {
+    background: linear-gradient(to bottom,
+            rgba(222, 245, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 40%);
     border: 2px solid rgba(222, 245, 255, 1);
     background-color: white;
 }
-.card-2{
-    background: linear-gradient(to bottom, 
-              rgba(255, 244, 220, 1) 0%, 
-              rgba(255, 255, 255, 0) 40%);
+
+.card-2 {
+    background: linear-gradient(to bottom,
+            rgba(255, 244, 220, 1) 0%,
+            rgba(255, 255, 255, 0) 40%);
     border: 2px solid #FFF4DC;
     background-color: white;
 }
-.card-3{
-    background: linear-gradient(to bottom, 
-              #EEE1FF 0%, 
-              rgba(255, 255, 255, 0) 40%);
-    border:2px solid #EEE1FF;
+
+.card-3 {
+    background: linear-gradient(to bottom,
+            #EEE1FF 0%,
+            rgba(255, 255, 255, 0) 40%);
+    border: 2px solid #EEE1FF;
     background-color: white;
 }
-.card-title{
+
+.card-title {
     font-size: 1.5rem;
     margin-top: 32px;
 }
-.card-subtitle{
+
+.card-subtitle {
     margin: 34px 0px;
     color: #808080;
     font-size: 1rem;
 }
-.card-read{
+
+.card-read {
     font-size: 1rem;
 }
-.curriculum-btn-left{
-    background-color: orange;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 1.5rem;
-    color: white;
-    border: none;
-}
-.curriculum-btn-right{
+
+.curriculum-btn-left {
     background-color: orange;
     width: 60px;
     height: 60px;
@@ -211,53 +222,170 @@
     border: none;
 }
 
+.curriculum-btn-right {
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+}
+
+/* stories section style   */
+.stories-bg{
+    background: linear-gradient(to bottom,
+            #EEE1FF 0%,
+            rgba(255, 255, 255, 0) 40%);
+}
+.stories-card-container{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.stories-single-card-container{
+    box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    /* border: 1px solid black; */
+}
+
+.stories-card-1 {
+    width: 530px;
+    
+    
+    background-color: white;
+}  
+.stories-card-1 > img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-btn {
+    background-color: #3CD8E8;
+    padding: 15px 18px;
+    color: white;
+    font-size: 1rem;
+    /* font-weight: 600px; */
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+    bottom: 30px;
+}
+.stories-card-info{
+    padding:0px 40px 35px 40px;
+    background-color: white;
+}
+.stories-card-info > h3{
+    font-size: 1.5rem;
+    margin-top: 37px;
+    margin-bottom: 50px;
+}
+
+.small-card-container{
+    /* width: 290px; */
+    grid-template-columns: repeat(2,1fr);
+}
+.small-card{
+    width: 290px;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+    box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.small-card > img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.small-card-info{
+    padding: 0px 38px 28px 38px;
+    background-color: white;
+}
+
+.small-card-info > p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.green{
+    background-color: #95B226;
+}
+.pupel{
+    background-color: #5D58F0;
+}
+.stories-bgs{
+    background: linear-gradient(to top,
+            #FEA301 0%,
+            rgba(255, 255, 255, 0) 70%);
+}
+.abcd-bg {
+    background-image: url(../assets/bg.png);
+}
+.margin-0{
+    margin-bottom: 0px;
+}
+
+
+
+
+
 /* footer section style */
-.footer{
+.footer {
     background-color: #01ACFD;
     height: 520px;
 }
-.footer-containerss{
-    
-}
-.footer-container{
+
+/* .footer-containerss {} */
+
+.footer-container {
     /* border: 1px solid tomato; */
     width: 1080px;
     /* height: 222px; */
 }
-.logo-title{
+
+.logo-title {
     width: 400px;
 }
-.footer-title{
+
+.footer-title {
     color: white;
 }
-.footer-subtitle{
+
+.footer-subtitle {
     font-size: 1.25rem;
     color: white;
     margin-left: 15px;
     margin-top: 36px;
 }
-.logo-title-container{
+
+.logo-title-container {
     width: 300px;
 }
-.footer-logo > img{
+
+.footer-logo>img {
     width: 83px;
     height: 82px;
 }
-.about-school > h3{
+
+.about-school>h3 {
     margin-bottom: 32px;
     color: white;
 }
-.about-school > p{
+
+.about-school>p {
     margin-bottom: 20px;
     color: white;
 }
-.footer-title{
+
+.footer-title {
     /* font-size: 1.325rem; */
 }
-.keep-in-touch > h3{
+
+.keep-in-touch>h3 {
     color: white;
     margin-bottom: 32px;
 }
+
 
 
 
@@ -320,50 +448,75 @@
         margin-bottom: 18px;
         margin-top: 18px;
     }
-/* curriculum style  */
-.std-head{
-    margin-top: 40px;
-    font-size: 1.75rem;
-}
-.cards-containers{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card-container{
-    margin-top: 20px;
-    grid-template-columns: repeat(1,1fr);
-    gap: 13px;
-}
-.gap-10{
-    display: none;
+
+    /* curriculum style  */
+    .std-head {
+        margin-top: 40px;
+        font-size: 1.75rem;
+    }
+
+    .cards-containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 13px;
+    }
+
+    .gap-10 {
+        display: none;
+    }
+    .small-card{
+        width: 220px;
+        /* padding: 0px 22px 18px 22px ; */
+    }
+    /* Stories section  */
+    .stories-single-card-container{
+        display: none;
+    }
+    .card-btn{
+        width: max-content;
+        font-size: 9px;
+    }
+
+    /* footer section style */
+    .footer {
+        height: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .logo-title {
+        margin-top: 60px;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-school {
+        margin-left: 15px;
+    }
+
+    .about-school>h3 {
+        margin-top: 32px;
+    }
+
+    .keep-in-touch {
+        width: 357px;
+        margin-left: 15px;
+        margin-bottom: 60px;
+    }
+
+    
 }
 
-/* footer section style */
-.footer{
-    height: 100%;
-}
-.footer-container{
-    flex-direction: column;
-}
-.logo-title{
-    margin-top: 60px;
-}
-.footer-subtitle{
-    font-size: 1rem;
-}
-.about-school{
-    margin-left: 15px;
-}
-.about-school > h3{
-    margin-top: 32px;
-}
-.keep-in-touch{
-    width: 357px;
-    margin-left: 15px;
-    margin-bottom: 60px;
-}
-}
 /*Extra Responsive style  */
 @media screen and (min-width: 577px) {
     .menu-mobile {
